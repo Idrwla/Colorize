@@ -1,0 +1,7 @@
+<div class="container" [ngStyle]="{ backgroundColor:colorCode.toString()}">
+  <div class="color-info">
+    <button class="changeColor" (click)="setColorRandomly()"><img src="./assets/2x/baseline_cached_black_18dp.png"></button><br>
+    <input class="changeColor" maxlength="7" minlength="1" #Code (input)="changeColor(Code.value)" [value]="colorCode.toString()">
+    <p>{{specificName()}}</p>
+  </div>
+</div>
